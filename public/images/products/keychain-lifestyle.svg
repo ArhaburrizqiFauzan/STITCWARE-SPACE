@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <linearGradient id="terracottaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97A5E" />
+      <stop offset="100%" stop-color="#C1694F" />
+    </linearGradient>
+    <linearGradient id="yellowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0A0" />
+      <stop offset="100%" stop-color="#FFE97D" />
+    </linearGradient>
+    <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE1E1" />
+      <stop offset="100%" stop-color="#F0D3D3" />
+    </linearGradient>
+    <linearGradient id="creamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBF7F0" />
+      <stop offset="100%" stop-color="#EFE3D0" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#3A2E2A" flood-opacity="0.12" />
+    </filter>
+    <filter id="stickerShadow" x="-5%" y="-5%" width="120%" height="120%">
+      <feDropShadow dx="4" dy="4" stdDeviation="0" flood-color="#3A2E2A" flood-opacity="1" />
+    </filter>
+    <pattern id="canvasPattern" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="1" fill="#3A2E2A" fill-opacity="0.08" />
+      <circle cx="12" cy="12" r="1" fill="#3A2E2A" fill-opacity="0.08" />
+    </pattern>
+    <pattern id="wovenPatch" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M0 0h10v10H0z" fill="#C1694F" fill-opacity="0.25" />
+      <path d="M10 0h10v10H10z" fill="#FFE97D" fill-opacity="0.4" />
+      <path d="M0 10h10v10H0z" fill="#F0D3D3" fill-opacity="0.45" />
+      <path d="M10 10h10v10H10z" fill="#3A2E2A" fill-opacity="0.15" />
+      <path d="M2 5h6M12 5h6M5 12v6M15 12v6" stroke="#3A2E2A" stroke-width="0.8" stroke-dasharray="2 2" stroke-opacity="0.4"/>
+    </pattern>
+  </defs>
+  
+  <rect width="600" height="600" fill="#FAF7F2" rx="32" />
+  <circle cx="300" cy="300" r="240" fill="#EFE3D0" fill-opacity="0.4" />
+  <g transform="translate(180, 180)" filter="url(#stickerShadow)">
+    <rect width="240" height="120" rx="20" fill="#FAF7F2" stroke="#3A2E2A" stroke-width="3" />
+    <text x="120" y="70" font-family="sans-serif" font-weight="900" font-size="28" fill="#C1694F" text-anchor="middle" letter-spacing="3">FEBRI</text>
+    <circle cx="120" cy="20" r="8" fill="#FAF7F2" stroke="#3A2E2A" stroke-width="2" />
+  </g>
+  <g transform="translate(150, 420) rotate(-3)" filter="url(#stickerShadow)">
+    <rect width="300" height="42" rx="21" fill="#FFE97D" stroke="#3A2E2A" stroke-width="2" />
+    <text x="150" y="26" font-family="sans-serif" font-weight="bold" font-size="12" fill="#3A2E2A" text-anchor="middle">GIFT IT TO SOMEONE SPECIAL 🎁</text>
+  </g>
+
+</svg>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <linearGradient id="terracottaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97A5E" />
+      <stop offset="100%" stop-color="#C1694F" />
+    </linearGradient>
+    <linearGradient id="yellowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0A0" />
+      <stop offset="100%" stop-color="#FFE97D" />
+    </linearGradient>
+    <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE1E1" />
+      <stop offset="100%" stop-color="#F0D3D3" />
+    </linearGradient>
+    <linearGradient id="creamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBF7F0" />
+      <stop offset="100%" stop-color="#EFE3D0" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#3A2E2A" flood-opacity="0.12" />
+    </filter>
+    <filter id="stickerShadow" x="-5%" y="-5%" width="120%" height="120%">
+      <feDropShadow dx="4" dy="4" stdDeviation="0" flood-color="#3A2E2A" flood-opacity="1" />
+    </filter>
+    <pattern id="canvasPattern" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="1" fill="#3A2E2A" fill-opacity="0.08" />
+      <circle cx="12" cy="12" r="1" fill="#3A2E2A" fill-opacity="0.08" />
+    </pattern>
+    <pattern id="wovenPatch" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M0 0h10v10H0z" fill="#C1694F" fill-opacity="0.25" />
+      <path d="M10 0h10v10H10z" fill="#FFE97D" fill-opacity="0.4" />
+      <path d="M0 10h10v10H0z" fill="#F0D3D3" fill-opacity="0.45" />
+      <path d="M10 10h10v10H10z" fill="#3A2E2A" fill-opacity="0.15" />
+      <path d="M2 5h6M12 5h6M5 12v6M15 12v6" stroke="#3A2E2A" stroke-width="0.8" stroke-dasharray="2 2" stroke-opacity="0.4"/>
+    </pattern>
+  </defs>
+  
+  <rect width="600" height="600" fill="#FAF7F2" rx="32" />
+  <circle cx="300" cy="300" r="230" fill="#F0D3D3" fill-opacity="0.3" />
+
+  <g transform="translate(390, 70) rotate(-6)" filter="url(#stickerShadow)">
+    <rect width="140" height="34" rx="17" fill="#F0D3D3" stroke="#3A2E2A" stroke-width="2" />
+    <text x="70" y="22" font-family="sans-serif" font-weight="bold" font-size="11" fill="#3A2E2A" text-anchor="middle">ZERO VIRGIN WASTE</text>
+  </g>
+
+  <!-- Handles -->
+  <path d="M 230 290 C 230 150, 370 150, 370 290" fill="none" stroke="#C1694F" stroke-width="20" stroke-linecap="round" filter="url(#softShadow)" />
+  <path d="M 230 290 C 230 150, 370 150, 370 290" fill="none" stroke="#FFE97D" stroke-width="3" stroke-dasharray="6 6" />
+
+  <!-- Trapezoid Handbag Body -->
+  <g filter="url(#softShadow)">
+    <polygon points="180,290 420,290 450,510 150,510" fill="url(#creamGrad)" stroke="#3A2E2A" stroke-width="3" />
+    <polygon points="180,290 420,290 450,510 150,510" fill="url(#canvasPattern)" />
+  </g>
+
+  <!-- Center Decorative Contrast Perca Band -->
+  <polygon points="260,290 340,290 355,510 245,510" fill="url(#pinkGrad)" stroke="#3A2E2A" stroke-width="2" />
+  <polygon points="275,340 325,340 335,460 265,460" fill="url(#terracottaGrad)" stroke="#3A2E2A" stroke-width="2" />
+
+  <!-- Base Trim -->
+  <line x1="150" y1="505" x2="450" y2="505" stroke="#C1694F" stroke-width="10" stroke-linecap="round" />
+
+  <!-- S&S Minimalist Badge -->
+  <g transform="translate(260, 410)">
+    <rect width="80" height="26" rx="8" fill="#FFE97D" stroke="#3A2E2A" stroke-width="2" />
+    <text x="40" y="17" font-family="sans-serif" font-weight="bold" font-size="10" fill="#3A2E2A" text-anchor="middle">LUNA S&amp;S</text>
+  </g>
+
+</svg>

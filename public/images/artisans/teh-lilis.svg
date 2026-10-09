@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <linearGradient id="terracottaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97A5E" />
+      <stop offset="100%" stop-color="#C1694F" />
+    </linearGradient>
+    <linearGradient id="yellowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0A0" />
+      <stop offset="100%" stop-color="#FFE97D" />
+    </linearGradient>
+    <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE1E1" />
+      <stop offset="100%" stop-color="#F0D3D3" />
+    </linearGradient>
+    <linearGradient id="creamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBF7F0" />
+      <stop offset="100%" stop-color="#EFE3D0" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#3A2E2A" flood-opacity="0.12" />
+    </filter>
+    <filter id="stickerShadow" x="-5%" y="-5%" width="120%" height="120%">
+      <feDropShadow dx="4" dy="4" stdDeviation="0" flood-color="#3A2E2A" flood-opacity="1" />
+    </filter>
+    <pattern id="canvasPattern" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="1" fill="#3A2E2A" fill-opacity="0.08" />
+      <circle cx="12" cy="12" r="1" fill="#3A2E2A" fill-opacity="0.08" />
+    </pattern>
+    <pattern id="wovenPatch" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M0 0h10v10H0z" fill="#C1694F" fill-opacity="0.25" />
+      <path d="M10 0h10v10H10z" fill="#FFE97D" fill-opacity="0.4" />
+      <path d="M0 10h10v10H0z" fill="#F0D3D3" fill-opacity="0.45" />
+      <path d="M10 10h10v10H10z" fill="#3A2E2A" fill-opacity="0.15" />
+      <path d="M2 5h6M12 5h6M5 12v6M15 12v6" stroke="#3A2E2A" stroke-width="0.8" stroke-dasharray="2 2" stroke-opacity="0.4"/>
+    </pattern>
+  </defs>
+  
+    <rect width="600" height="600" fill="#FAF7F2" rx="32" />
+    <circle cx="300" cy="270" r="180" fill="#EFE3D0" fill-opacity="0.4" />
+    
+    <!-- Stylized Artisan Portrait Silhouette & Features -->
+    <g transform="translate(300, 270)">
+      <!-- Body & Apron -->
+      <path d="M -110 200 C -110 90, 110 90, 110 200 Z" fill="#C1694F" stroke="#3A2E2A" stroke-width="3" />
+      <polygon points="-50,110 50,110 60,200 -60,200" fill="#EFE3D0" stroke="#3A2E2A" stroke-width="2" />
+      <line x1="-30" y1="110" x2="-60" y2="200" stroke="#3A2E2A" stroke-width="2" stroke-dasharray="4 4" />
+      <line x1="30" y1="110" x2="60" y2="200" stroke="#3A2E2A" stroke-width="2" stroke-dasharray="4 4" />
+      
+      <!-- Head -->
+      <circle cx="0" cy="10" r="65" fill="#FAF7F2" stroke="#3A2E2A" stroke-width="3" />
+      <!-- Hair/Hijab/Cap -->
+      <path d="M -65 10 C -65 -60, 65 -60, 65 10 C 65 50, -65 50, -65 10 Z" fill="#3A2E2A" />
+      <circle cx="0" cy="20" r="45" fill="#FAF7F2" />
+      
+      <!-- Friendly expression -->
+      <path d="M -22 15 Q -15 10 -8 15" fill="none" stroke="#3A2E2A" stroke-width="3" stroke-linecap="round" />
+      <path d="M 8 15 Q 15 10 22 15" fill="none" stroke="#3A2E2A" stroke-width="3" stroke-linecap="round" />
+      <path d="M -14 35 Q 0 48 14 35" fill="none" stroke="#3A2E2A" stroke-width="3" stroke-linecap="round" />
+      <circle cx="-25" cy="28" r="8" fill="#F0D3D3" />
+      <circle cx="25" cy="28" r="8" fill="#F0D3D3" />
+    </g>
+
+    <!-- Name & Badge Card -->
+    <g transform="translate(60, 460)" filter="url(#stickerShadow)">
+      <rect width="480" height="95" rx="20" fill="#FAF7F2" stroke="#3A2E2A" stroke-width="2.5" />
+      <text x="30" y="38" font-family="sans-serif" font-weight="900" font-size="18" fill="#3A2E2A">Teh Lilis Suryani</text>
+      <text x="30" y="60" font-family="sans-serif" font-weight="bold" font-size="12" fill="#C1694F">Artisan Finishing & Miniatur Boneka Suede</text>
+      <text x="30" y="80" font-family="sans-serif" font-size="11" fill="#6B5851">📍 Cimahi Tengah</text>
+    </g>
+  
+</svg>
