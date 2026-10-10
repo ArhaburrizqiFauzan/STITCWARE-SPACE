@@ -40,12 +40,12 @@ export const ARTISANS: Record<string, Artisan> = {
   "artisan-ani": {
     id: "artisan-ani",
     name: "Ibu Ani Rohani",
-    role: "Master Artisan & Penjahit Pola Kanvas",
+    role: "Penjahit Berpengalaman",
     experienceYears: 12,
     location: "Melong, Cimahi Selatan, Jawa Barat",
     bio: "Pernah bekerja selama lebih dari 10 tahun di industri garmen ekspor Cimahi sebelum terdampak restrukturisasi pabrik. Ibu Ani kini memimpin tim perakitan tas S&S dengan teknik double-stitching yang kokoh.",
     formerFactory: "Eks-Pekerja PT Namnam Fashion Industries Cimahi",
-    avatar: "/images/artisans/ibu-ani.svg",
+    avatar: "/images/artisans/ibu-ani.webp",
     signatureSpecialty: "Jahitan presisi kanvas marsoto 350g & teknik piping sudut bulat Water-Based PU",
     craftCount: 540,
     favoriteCraft: "Aura Woven Shoulder Bag",
@@ -54,12 +54,12 @@ export const ARTISANS: Record<string, Artisan> = {
   "artisan-rahmat": {
     id: "artisan-rahmat",
     name: "Pak Rahmat Hidayat",
-    role: "Spesialis Anyam Perca & Rekonstruksi Struktur",
+    role: "Spesialis Anyam",
     experienceYears: 9,
     location: "Dipatiukur, Bandung Raya, Jawa Barat",
     bio: "Berlatar belakang operator jahit garmen denim di kawasan Bandung. Memiliki kepekaan tinggi dalam menyusun potongan perca beragam warna menjadi komposisi visual harmonis tanpa cacat simetris.",
     formerFactory: "Eks-Buruh Konveksi Ekspor Bandung Raya",
-    avatar: "/images/artisans/pak-rahmat.svg",
+    avatar: "/images/artisans/pak-rahmat.webp",
     signatureSpecialty: "Pola anyaman perca tenun drill-denim & pemasangan zipper antik",
     craftCount: 420,
     favoriteCraft: "Luna Compact Handbag",
@@ -68,12 +68,12 @@ export const ARTISANS: Record<string, Artisan> = {
   "artisan-lilis": {
     id: "artisan-lilis",
     name: "Teh Lilis Suryani",
-    role: "Artisan Finishing & Miniatur Boneka Tekstil",
+    role: "Artisan Finishing & Miniatur Boneka",
     experienceYears: 7,
     location: "Cimahi Tengah, Jawa Barat",
     bio: "Ibu muda terampil yang sebelumnya merakit pakaian anak di pabrik garmen. Di S&S, kecintaannya pada detail dituangkan dalam pembuatan bag charm boneka suede dan aksesoris dompet berpresisi tinggi.",
     formerFactory: "Eks-Garmen Tekstil Leuwigajah Cimahi",
-    avatar: "/images/artisans/teh-lilis.svg",
+    avatar: "/images/artisans/teh-lilis.webp",
     signatureSpecialty: "Bordir tangan ekspresi wajah boneka suede & isi dakron proporsional",
     craftCount: 680,
     favoriteCraft: "Stitchy Plush Bag Charm & Harmoni Wallet",
@@ -87,10 +87,10 @@ export const ARTISANS: Record<string, Artisan> = {
     location: "Soreang, Bandung Selatan, Jawa Barat",
     bio: "Ahli operasional laser cutting CO2 dan kontrol kualitas. Mengawasi pemotongan akrilik 3mm tanpa sisa hangus serta memastikan setiap produk yang keluar dari workshop memenuhi standar ekspor.",
     formerFactory: "Eks-Operator Teknik Manufaktur Bandung",
-    avatar: "/images/artisans/kang-deden.svg",
+    avatar: "/images/artisans/kang-deden.webp",
     signatureSpecialty: "Kalibrasi laser CO2 presisi 0.1mm untuk akrilik cast 3mm & QC kekuatan tarikan benang",
     craftCount: 890,
-    favoriteCraft: "Custom Name 3mm Acrylic Keychain",
+    favoriteCraft: "Custom Name Acrylic Keychain",
     quote: "Presisi adalah kunci. Kustomisasi nama konsumen harus seimbang dengan estetika desain S&S."
   }
 };
@@ -98,7 +98,7 @@ export const ARTISANS: Record<string, Artisan> = {
 export const TRACEABILITY_DATABASE: Record<string, TraceabilityRecord> = {
   "SNS-CMH-2026-042": {
     code: "SNS-CMH-2026-042",
-    productName: "Aura Woven Shoulder Bag",
+    productName: "Aura Shoulder Bag",
     productId: "sns-bag-shoulder",
     artisanId: "artisan-ani",
     batchNumber: "BATCH-2026-W04",
@@ -120,7 +120,7 @@ export const TRACEABILITY_DATABASE: Record<string, TraceabilityRecord> = {
   },
   "SNS-BDG-2026-108": {
     code: "SNS-BDG-2026-108",
-    productName: "Luna Compact Handbag",
+    productName: "Luna Handbag",
     productId: "sns-bag-handbag",
     artisanId: "artisan-rahmat",
     batchNumber: "BATCH-2026-W05",
@@ -164,7 +164,7 @@ export const TRACEABILITY_DATABASE: Record<string, TraceabilityRecord> = {
   },
   "SNS-CMH-2026-077": {
     code: "SNS-CMH-2026-077",
-    productName: "Harmoni Matching Wallet",
+    productName: "Harmoni Wallet",
     productId: "sns-wallet-terra",
     artisanId: "artisan-lilis",
     batchNumber: "BATCH-2026-W06",
@@ -208,7 +208,7 @@ export const TRACEABILITY_DATABASE: Record<string, TraceabilityRecord> = {
   },
   "SNS-BDG-2026-301": {
     code: "SNS-BDG-2026-301",
-    productName: "Custom Name 3mm Acrylic Keychain",
+    productName: "Custom Name Acrylic Keychain",
     productId: "sns-keychain-acrylic",
     artisanId: "artisan-deden",
     batchNumber: "BATCH-2026-CUSTOM",

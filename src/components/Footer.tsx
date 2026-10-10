@@ -19,7 +19,7 @@ export default function Footer() {
               Dapatkan Diskon 10% &amp; Member Loyalty Card S&amp;S
             </h3>
             <p className="text-sm text-[#3A2E2A]/80">
-              Akses early-release untuk motif perca limited edition dan laporan transparansi bulanan penyerapan limbah kain.
+              Akses early-release untuk koleksi limited edition dan keuntungan lainnya.
             </p>
           </div>
           <div className="flex w-full md:w-auto items-center gap-2">

@@ -342,7 +342,7 @@ export default function HomePage() {
                 <div className="bg-[#FAF7F2] p-4 rounded-2xl border-2 border-[#3A2E2A] flex items-center gap-3">
                   <div className="relative w-14 h-14 rounded-full overflow-hidden border-2 border-[#3A2E2A] shrink-0 bg-[#FFE97D]">
                     <Image
-                      src="/images/artisans/ibu-ani.svg"
+                      src="/images/artisans/ibu-ani.webp"
                       alt="Ibu Ani"
                       fill
                       className="object-cover"

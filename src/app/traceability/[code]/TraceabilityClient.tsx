@@ -52,11 +52,11 @@ export default function TraceabilityClient({ code }: { code: string }) {
             <div className="flex flex-wrap items-center gap-2">
               <span className="sticker-badge bg-[#FFE97D] text-[#3A2E2A]">
                 <QrCode className="w-3.5 h-3.5 text-[#C1694F]" />
-                QR STORYTELLER SIMULATOR
+                QR STORYTELLER
               </span>
               <span className="sticker-badge bg-emerald-100 text-emerald-800 border-emerald-800">
                 <ShieldCheck className="w-3.5 h-3.5 text-emerald-700" />
-                VERIFIED ETHICAL ORIGIN
+                VERIFIED ORIGIN
               </span>
             </div>
 
@@ -65,7 +65,7 @@ export default function TraceabilityClient({ code }: { code: string }) {
             </h1>
 
             <p className="text-sm sm:text-base text-[#3A2E2A]/80 font-medium leading-relaxed">
-              Selamat datang di sertifikat transparansi STITCHWARE &amp; SPACE. Di sinilah setiap produk membuktikan komitmennya terhadap kelestarian lingkungan dan penghargaan pada martabat tenaga kerja eks-garmen Jawa Barat.
+              Selamat datang di sertifikat transparansi STITCHWARE &amp; SPACE. Di sinilah setiap produk membuktikan komitmennya terhadap kelestarian lingkungan dan penghargaan pada martabat tenaga kerja.
             </p>
 
             {/* Quick search bar for other QR codes */}
@@ -175,7 +175,7 @@ export default function TraceabilityClient({ code }: { code: string }) {
           <div className="bg-[#FAF7F2] rounded-3xl border-3 border-[#3A2E2A] p-6 shadow-sticker space-y-4">
             <h3 className="text-base font-black text-[#3A2E2A] flex items-center gap-2">
               <MapPin className="w-4 h-4 text-[#C1694F]" />
-              Lokasi Workshop &amp; Atelier
+              Lokasi Workshop
             </h3>
             
             <div className="space-y-2 text-xs">
@@ -190,10 +190,6 @@ export default function TraceabilityClient({ code }: { code: string }) {
               <div className="flex justify-between py-1 border-b border-[#3A2E2A]/10">
                 <span className="text-[#3A2E2A]/60">Quality Control (QC):</span>
                 <span className="font-bold">{record.qcInspector} ({record.qcStatus})</span>
-              </div>
-              <div className="flex justify-between py-1 border-b border-[#3A2E2A]/10">
-                <span className="text-[#3A2E2A]/60">Indeks Upah Layak:</span>
-                <span className="font-bold text-emerald-700">{record.impactMetrics.fairWageIndex}</span>
               </div>
             </div>
           </div>
@@ -211,7 +207,7 @@ export default function TraceabilityClient({ code }: { code: string }) {
               <strong>Komposisi Material:</strong> {record.fabricType}
             </p>
             <div className="bg-[#FAF7F2] p-3 rounded-xl border border-[#3A2E2A] text-xs font-semibold text-[#3A2E2A]">
-              ✓ Melalui proses sortir ketat, pembersihan higienis, dan grading tebal serat sebelum dipola ulang.
+              ✓ Melalui proses sortir ketat dan grading produk.
             </div>
           </div>
 

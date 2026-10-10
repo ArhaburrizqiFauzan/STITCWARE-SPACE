@@ -125,7 +125,7 @@ export default function ImpactCounter() {
                 <div className="flex justify-between text-[11px] font-bold text-[#3A2E2A]/60">
                   <span>1 Tas (Starter)</span>
                   <span>5 Tas (Squad Circle)</span>
-                  <span>10 Tas (Eco Warrior)</span>
+                  <span>10++ Tas (Eco Warrior)</span>
                 </div>
               </div>
             </div>

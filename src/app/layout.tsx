@@ -43,6 +43,18 @@ export const metadata: Metadata = {
     "Bandung Fashion",
   ],
   authors: [{ name: "Tim Hore - Universitas Siliwangi" }],
+  icons: {
+    icon: [
+      {
+        url: "/brand-logo.ico",
+        media: "(prefers-color-scheme: light)",
+      },
+      {
+        url: "/brand-logo-light.ico",
+        media: "(prefers-color-scheme: dark)",
+      },
+    ],
+  },
   openGraph: {
     title: "STITCHWARE & SPACE - Fashion Accessories Sirkuler",
     description:

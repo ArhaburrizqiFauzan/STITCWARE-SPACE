@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useCart } from "@/context/CartContext";
 import { PRODUCTS } from "@/data/products";
-import { X, Plus, Minus, Trash2, ShoppingBag, Sparkles, ArrowRight, Heart } from "lucide-react";
+import { PartyPopper, Lock, Sprout, HandCoins, X, Plus, Minus, Trash2, ShoppingBag, Sparkles, ArrowRight, Heart } from "lucide-react";
 
 export default function CartDrawer() {
   const {
@@ -76,8 +76,8 @@ export default function CartDrawer() {
               <span>{totalImpact.fabricKg} kg Limbah</span>
             </div>
             <div className="flex justify-between text-[11px] text-[#3A2E2A]/70">
-              <span>🧵 Upah Layak: <strong>{totalImpact.artisanHours} jam</strong></span>
-              <span>🌱 CO2 Offset: <strong>{totalImpact.co2Kg} kg</strong></span>
+              <span className="flex items-center gap-1.5"><HandCoins className="w-3.5 h-3.5 text-[#C1694F]" />Upah Layak: <strong>{totalImpact.artisanHours} jam</strong></span>
+              <span className="flex items-center gap-1.5"><Sprout className="w-3.5 h-3.5 text-[#4FC162]" />Karbon: <strong>{totalImpact.co2Kg} kg</strong></span>
             </div>
           </div>
 
@@ -86,7 +86,9 @@ export default function CartDrawer() {
             <div className="flex justify-between items-center mb-1 text-[11px] font-bold text-[#3A2E2A]">
               <span>
                 {diffToFree <= 0
-                  ? "🎉 Selamat! Kamu Mendapat Bebas Ongkir"
+                  ? <span className="flex items-center gap-1.5 text-[#C1694F]">
+                    <PartyPopper className="w-3.5 h-3.5" />"Selamat! Kamu Mendapat Bebas Ongkir"
+                    </span>
                   : `Tambah Rp ${diffToFree.toLocaleString("id-ID")} lagi untuk Bebas Ongkir`}
               </span>
               <span>{progressPercent}%</span>
@@ -262,7 +264,9 @@ export default function CartDrawer() {
               </button>
 
               <p className="text-[11px] text-center text-[#3A2E2A]/60 font-medium">
-                🔒 Pembayaran aman QRIS, VA &amp; Terjamin 100% Produk Berdampak
+                <span className="flex items-center justify-center gap-1.5">
+                <Lock className="w-3 h-3 text-[#C1694F]" />Pembayaran aman QRIS, VA &amp; Terjamin 100%
+                </span>
               </p>
             </div>
           )}

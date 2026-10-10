@@ -39,7 +39,7 @@ export interface Product {
 export const PRODUCTS: Product[] = [
   {
     id: "sns-bag-shoulder",
-    name: "Aura Woven Shoulder Bag",
+    name: "Aura Shoulder Bag",
     category: "bags",
     modelType: "Shoulder Bag",
     price: 499900,
@@ -49,9 +49,7 @@ export const PRODUCTS: Product[] = [
     description: "Shoulder bag bergaya Gen-Z estetik dengan siluet proporsional dan aksen perca tenun presisi. Cocok untuk hangout dari kelas ke kafe hingga meeting santai.",
     story: "Dirakit oleh Ibu Ani di Cimahi menggunakan Kanvas Marsoto 350g kokoh bertekstur bintik halus serta perca tenun drill daur ulang industri garmen Bandung Barat.",
     images: [
-      "/images/products/shoulder-bag-terracotta.svg",
-      "/images/products/shoulder-bag-detail.svg",
-      "/images/products/shoulder-bag-lifestyle.svg"
+      "/images/products/shoulder-bag.png",
     ],
     badges: ["100% Upcycled", "Free Bag Charm", "Limited Perca Edition"],
     materials: [
@@ -85,9 +83,8 @@ export const PRODUCTS: Product[] = [
     ],
     defaultTraceCode: "SNS-CMH-2026-042",
     colorways: [
-      { name: "Terracotta Warm", hex: "#C1694F" },
-      { name: "Cream & Pastel Pink", hex: "#EFE3D0" },
-      { name: "Soft Sunset Yellow", hex: "#FFE97D" }
+      { name: "Warm Cream & Pink", hex: "#F0D3D3" },
+      { name: "Terracotta Earth", hex: "#C1694F" }
     ],
     isCustomizable: false,
     impactMetrics: {
@@ -98,7 +95,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "sns-bag-handbag",
-    name: "Luna Compact Handbag",
+    name: "Luna Handbag",
     category: "bags",
     modelType: "Handbag",
     price: 499900,
@@ -108,9 +105,7 @@ export const PRODUCTS: Product[] = [
     description: "Handbag elegan bernuansa hangat dengan handle Water-Based PU lembut dan sentuhan geometris perca tenun kontras. Sempurna untuk casual chic Gen-Z look.",
     story: "Dikerjakan teliti oleh Pak Rahmat di workshop Bandung Raya. Menggabungkan potongan perca denim dan kanvas sisa produksi lokal yang disortir dan dicuci steril.",
     images: [
-      "/images/products/handbag-cream.svg",
-      "/images/products/handbag-detail.svg",
-      "/images/products/handbag-lifestyle.svg"
+      "/images/products/handbag.png",
     ],
     badges: ["Crafted by Artisans", "Free Bag Charm", "Zero Virgin Waste"],
     materials: [
@@ -145,7 +140,7 @@ export const PRODUCTS: Product[] = [
     defaultTraceCode: "SNS-BDG-2026-108",
     colorways: [
       { name: "Warm Cream & Pink", hex: "#F0D3D3" },
-      { name: "Terracotta Earth", hex: "#C1694F" },
+      { name: "Off-White Cream", hex: "#EFE3D0" },
       { name: "Pastel Mellow", hex: "#FFE97D" }
     ],
     isCustomizable: false,
@@ -167,9 +162,7 @@ export const PRODUCTS: Product[] = [
     description: "Sling bag kasual minimalis dengan tali selempang yang dapat diatur. Ringan, fungsional, dan memberikan aksen visual ceria untuk mobilitas harian kampus.",
     story: "Setiap jengkal jahitan dirakit dengan presisi tinggi oleh Ibu Ani, memberikan penghidupan mandiri berkelanjutan bagi eks-buruh garmen Cimahi.",
     images: [
-      "/images/products/sling-bag-yellow.svg",
-      "/images/products/sling-bag-detail.svg",
-      "/images/products/sling-bag-lifestyle.svg"
+      "/images/products/sling-bag.png"
     ],
     badges: ["Best Seller", "Free Bag Charm", "Fair Wages Certified"],
     materials: [
@@ -203,8 +196,8 @@ export const PRODUCTS: Product[] = [
     ],
     defaultTraceCode: "SNS-CMH-2026-015",
     colorways: [
-      { name: "Pastel Soft Yellow", hex: "#FFE97D" },
       { name: "Terracotta Classic", hex: "#C1694F" },
+      { name: "Pastel Soft Yellow", hex: "#FFE97D" },
       { name: "Off-White Cream", hex: "#EFE3D0" }
     ],
     isCustomizable: false,
@@ -216,7 +209,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "sns-wallet-terra",
-    name: "Harmoni Matching Wallet",
+    name: "Harmoni Wallet",
     category: "wallets",
     modelType: "Bifold Wallet",
     price: 299900,
@@ -226,9 +219,7 @@ export const PRODUCTS: Product[] = [
     description: "Dompet pasangan senada dengan koleksi tas S&S dalam bahasa desain dan warna yang serasi. Tampil kompak sebagai kesatuan estetik terkurasi.",
     story: "Dibuat dari kain perca presisi potongan sisa tas, memanfaatkan 100% material tanpa limbah buang. Dikerjakan tangan oleh Teh Lilis di Cimahi.",
     images: [
-      "/images/products/wallet-terracotta.svg",
-      "/images/products/wallet-inside.svg",
-      "/images/products/wallet-lifestyle.svg"
+      "/images/products/wallet.png"
     ],
     badges: ["Matching Set", "Zero Waste Pattern", "Handcrafted"],
     materials: [
@@ -262,7 +253,8 @@ export const PRODUCTS: Product[] = [
     ],
     defaultTraceCode: "SNS-CMH-2026-077",
     colorways: [
-      { name: "Terracotta & Cream", hex: "#C1694F" },
+      { name: "Dark Espresso", hex: "#3A2E2A" },
+      { name: "Off-White Cream", hex: "#EFE3D0" },
       { name: "Pastel Pink & Mellow", hex: "#F0D3D3" }
     ],
     isCustomizable: false,
@@ -284,9 +276,7 @@ export const PRODUCTS: Product[] = [
     description: "Bag charm boneka kecil menggemaskan bertekstur kain suede halus dengan isian dakron non-toxic Grade A. Menambah vibe playful dan identitas personal tasmu.",
     story: "Setiap boneka dijahit manual dengan detail bordir mata dan aksen logo S&S oleh Teh Lilis, eks-pekerja garmen spesialis boneka & aksesoris tekstil.",
     images: [
-      "/images/products/bag-charm-plush.svg",
-      "/images/products/bag-charm-detail.svg",
-      "/images/products/bag-charm-onbag.svg"
+      "/images/products/bag-charm.png"
     ],
     badges: ["Super Cute", "Dakron Grade A", "Soft Suede Texture"],
     materials: [
@@ -315,6 +305,7 @@ export const PRODUCTS: Product[] = [
     ],
     defaultTraceCode: "SNS-CMH-2026-204",
     colorways: [
+      { name: "Off-White Cream", hex: "#EFE3D0" },
       { name: "Terracotta Bear", hex: "#C1694F" },
       { name: "Mellow Yellow Bunny", hex: "#FFE97D" },
       { name: "Blush Pink Kitty", hex: "#F0D3D3" }
@@ -328,7 +319,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "sns-keychain-acrylic",
-    name: "Custom Name 3mm Acrylic Keychain",
+    name: "Custom Name Acrylic Keychain",
     category: "accessories",
     modelType: "Acrylic Keychain",
     price: 39900,
@@ -338,9 +329,7 @@ export const PRODUCTS: Product[] = [
     description: "Gantungan kunci akrilik cast tebal 3mm dengan laser cutting presisi dan live customizer nama/inisial pilihanmu. Anti menguning dan tahan benturan.",
     story: "Diproses menggunakan mesin laser cutting CO2 dan dirakit tangan oleh Kang Deden di Bandung Raya. Memberikan sentuhan personal eksklusif (Endowment Effect).",
     images: [
-      "/images/products/keychain-acrylic.svg",
-      "/images/products/keychain-custom.svg",
-      "/images/products/keychain-lifestyle.svg"
+      "/images/products/keychain.png"
     ],
     badges: ["Live Customizer", "Cast Acrylic 3mm", "Laser Engraved"],
     materials: [
@@ -369,8 +358,8 @@ export const PRODUCTS: Product[] = [
     ],
     defaultTraceCode: "SNS-BDG-2026-301",
     colorways: [
-      { name: "Crystal Clear + Terracotta Ink", hex: "#C1694F" },
       { name: "Frosted Pastel Pink", hex: "#F0D3D3" },
+      { name: "Crystal Clear + Terracotta Ink", hex: "#C1694F" },
       { name: "Neon Mellow Amber", hex: "#FFE97D" }
     ],
     isCustomizable: true,
