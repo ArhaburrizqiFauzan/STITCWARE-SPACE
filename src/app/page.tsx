@@ -8,6 +8,8 @@ import ProductCard from "@/components/ProductCard";
 import ImpactCounter from "@/components/ImpactCounter";
 import {
   Sparkles,
+  Leaf,
+  ScissorsLineDashed,
   ArrowRight,
   Recycle,
   Heart,
@@ -47,13 +49,15 @@ export default function HomePage() {
               <div className="flex flex-wrap items-center gap-2">
                 <span className="sticker-badge bg-[#FFE97D] text-[#3A2E2A]">
                   <Sparkles className="w-3.5 h-3.5 text-[#C1694F]" />
-                  CIRCULAR FASHION 2026
+                  IMPACTFUL FASHION
                 </span>
                 <span className="sticker-badge bg-[#FAF7F2] text-[#3A2E2A]">
-                  🌱 0% VIRGIN PLASTIC
+                  <Leaf className="w-3.5 h-3.5 text-[#C1694F]" />
+                  0% VIRGIN PLASTIC
                 </span>
                 <span className="sticker-badge bg-[#F0D3D3] text-[#3A2E2A]">
-                  🧵 CRAFTED IN CIMAHI &amp; BANDUNG
+                  <ScissorsLineDashed className="w-3.5 h-3.5 text-[#C1694F]" />
+                  CRAFTED IN CIMAHI &amp; BANDUNG
                 </span>
               </div>
 
@@ -153,7 +157,7 @@ export default function HomePage() {
               Koleksi STITCHWARE &amp; SPACE
             </h2>
             <p className="text-sm text-[#3A2E2A]/75 font-medium mt-1">
-              Pilihan tas, dompet, bag charm boneka, dan keychain akrilik custom.
+              Pilihan tas, dompet, bag charm boneka, dan keychain akrilik sendiri.
             </p>
           </div>
 
@@ -374,7 +378,8 @@ export default function HomePage() {
         <div className="bg-[#F0D3D3] rounded-4xl border-3 border-[#3A2E2A] shadow-sticker-lg p-8 sm:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="space-y-3 max-w-xl">
             <span className="sticker-badge bg-[#FAF7F2] text-[#3A2E2A]">
-              ✨ MAKE IT YOURS
+              <Sparkles className="w-3.5 h-3.5 text-[#FFE97D]" />
+              MAKE IT YOURS
             </span>
             <h2 className="text-2xl sm:text-4xl font-black text-[#3A2E2A] tracking-tight">
               Ingin Sentuhan Personal? Custom Nama di Gantungan Akrilik 3mm

@@ -40,19 +40,18 @@ export default function Footer() {
           {/* Brand Info (2 cols) */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-2xl bg-[#C1694F] flex items-center justify-center border-2 border-[#FAF7F2]">
-                <Image
-                  src="/images/brand-logo.svg"
-                  alt="STITCHWARE & SPACE"
-                  width={24}
-                  height={24}
-                  className="w-6 h-6"
-                />
-              </div>
-              <span className="text-xl font-black tracking-tight">STITCHWARE &amp; SPACE</span>
+              <Image
+                src="/images/brand-logo-light.svg"
+                alt="STITCHWARE & SPACE"
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-auto h-12 object-contain rounded-lg"
+              />
+              <span className="text-xl font-black tracking-tight">STITCHWARE<br />&amp; SPACE</span>
             </div>
             <p className="text-sm text-[#FAF7F2]/75 leading-relaxed">
-              Fashion accessories brand berbasis ekonomi sirkuler yang mengubah limbah potongan tekstil bermutu menjadi karya personal bernilai tinggi, sekaligus memberdayakan tenaga kerja terampil eks-buruh garmen Jawa Barat.
+              Fashion accessories brand berbasis ekonomi sirkuler, mengubah limbah tekstil bermutu menjadi karya personal bernilai tinggi, sekaligus memberdayakan tenaga kerja terampil eks-buruh garmen Jawa Barat.
             </p>
             <div className="flex flex-wrap gap-2 pt-2">
               <span className="sticker-badge bg-[#EFE3D0] text-[#3A2E2A]">
@@ -131,14 +130,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#FAF7F2]/60 gap-4">
-          <p>© 2026 STITCHWARE &amp; SPACE. All rights reserved. Universitas Siliwangi x Sivolution 4.0.</p>
-          <div className="flex items-center gap-6">
-            <span>Desain UI/UX Gen-Z</span>
-            <span>•</span>
-            <span>Circular Economy Initiative</span>
-            <span>•</span>
-            <span>Bandung Raya &amp; Cimahi</span>
-          </div>
+          <p>© 2026 STITCHWARE &amp; SPACE. All rights reserved.</p>
         </div>
 
       </div>

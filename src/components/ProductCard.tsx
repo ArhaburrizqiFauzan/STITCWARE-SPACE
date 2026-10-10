@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Product } from "@/data/products";
 import { useCart } from "@/context/CartContext";
-import { ShoppingCartPlus, Eye, QrCode, Sparkles } from "lucide-react";
+import { Recycle, HandCoins, ShoppingCartPlus, Eye, QrCode, Sparkles } from "lucide-react";
 
 interface ProductCardProps {
   product: Product;
@@ -81,9 +81,9 @@ export default function ProductCard({ product }: ProductCardProps) {
         <div className="flex items-center justify-between gap-2 mb-1.5">
           <span className="text-[11px] font-black uppercase tracking-wider text-[#C1694F]">
             {product.category === "bags"
-              ? "Tas (Include Charm)"
+              ? "Tas"
               : product.category === "wallets"
-                ? "Dompet Senada"
+                ? "Dompet"
                 : "Aksesoris"}
           </span>
           <div className="flex items-center gap-1.5">
@@ -112,8 +112,8 @@ export default function ProductCard({ product }: ProductCardProps) {
 
         {/* Impact micro-metric */}
         <div className="bg-[#EFE3D0]/60 rounded-xl px-2.5 py-1.5 mb-4 text-[11px] font-semibold text-[#3A2E2A] flex items-center justify-between">
-          <span>♻️ Perca: <strong>{product.impactMetrics.fabricUpcycledKg} kg</strong></span>
-          <span>🧵 Upah: <strong>{product.impactMetrics.artisanHours} jam</strong></span>
+          <span className="flex items-center gap-1.5"><Recycle className="w-3 h-3 text-[#C1694F]" /> <strong>{product.impactMetrics.fabricUpcycledKg} kg</strong></span>
+          <span className="flex items-center gap-1.5"><HandCoins className="w-3 h-3 text-[#C1694F]" /> <strong>{product.impactMetrics.artisanHours} jam</strong></span>
         </div>
 
         {/* Price & Action Buttons */}
