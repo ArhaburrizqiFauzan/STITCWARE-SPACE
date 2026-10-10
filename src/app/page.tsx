@@ -28,7 +28,7 @@ export default function HomePage() {
 
   return (
     <div className="space-y-20 pb-20">
-      
+
       {/* =========================================================================
           1. HERO SECTION (Gen-Z Aesthetic, Sticker Badges, Dual CTA)
          ========================================================================= */}
@@ -39,10 +39,10 @@ export default function HomePage() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
+
             {/* Left Content */}
             <div className="lg:col-span-7 space-y-6 text-left">
-              
+
               {/* Badges Cluster */}
               <div className="flex flex-wrap items-center gap-2">
                 <span className="sticker-badge bg-[#FFE97D] text-[#3A2E2A]">
@@ -61,14 +61,14 @@ export default function HomePage() {
               <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black text-[#3A2E2A] tracking-tight leading-[1.08] font-sans">
                 Ubah Limbah Kain Jadi Gaya{" "}
                 <span className="inline-block relative">
-                  <span className="relative z-10 text-[#C1694F] italic">Autentikmu.</span>
+                  <span className="relative z-10 text-[#C1694F] italic">Otentikmu.</span>
                   <span className="absolute bottom-1 left-0 right-0 h-4 bg-[#FFE97D] -rotate-1 -z-0 rounded-md" />
                 </span>
               </h1>
 
               {/* Sub-headline */}
               <p className="text-base sm:text-xl text-[#3A2E2A]/80 font-medium leading-relaxed max-w-2xl">
-                STITCHWARE &amp; SPACE (S&amp;S) mengubah potongan perca industri tekstil Jawa Barat menjadi koleksi tas, dompet, dan aksesoris estetik. Setiap karya dirakit dengan dedikasi oleh para eks-pekerja garmen terampil.
+                STITCHWARE &amp; SPACE mengubah potongan perca menjadi koleksi tas, dompet, dan aksesoris lain. Setiap karya dibuat dengan dedikasi para pribadi terampil.
               </p>
 
               {/* CTAs */}
@@ -85,7 +85,7 @@ export default function HomePage() {
                   href="#impact"
                   className="btn-sticker bg-[#FAF7F2] text-[#3A2E2A] px-7 py-4 rounded-2xl text-base font-black flex items-center justify-center gap-2 hover:bg-[#FFE97D]"
                 >
-                  <span>Cek Impact Kami</span>
+                  <span>Kontribusi Kami</span>
                   <Recycle className="w-5 h-5 text-[#C1694F]" />
                 </a>
               </div>
@@ -94,8 +94,8 @@ export default function HomePage() {
               <div className="inline-flex items-center gap-3 bg-[#EFE3D0]/80 border-2 border-[#3A2E2A] px-4 py-2.5 rounded-2xl text-xs font-bold text-[#3A2E2A]">
                 <Gift className="w-4 h-4 text-[#C1694F] shrink-0" />
                 <span>
-                  <strong>Gen-Z Special Offer:</strong> Setiap pembelian tas sudah include{" "}
-                  <span className="text-[#C1694F] font-black">1 FREE Plush Bag Charm senada!</span>
+                  <strong>Special Offer:</strong> Setiap pembelian tas sudah include{" "}
+                  <span className="text-[#C1694F] font-black">1 FREE Bag Charm senada!</span>
                 </span>
               </div>
 
@@ -105,17 +105,18 @@ export default function HomePage() {
             <div className="lg:col-span-5 relative">
               <div className="relative w-full aspect-square max-w-lg mx-auto rounded-4xl bg-[#FAF7F2] border-3 border-[#3A2E2A] shadow-sticker-lg p-4 overflow-hidden group">
                 <Image
-                  src="/images/hero-art.svg"
+                  src="/images/hero-art.webp"
                   alt="STITCHWARE & SPACE Hero Visual"
                   fill
-                  className="object-contain p-4 group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 1024px) 100vw, 42vw"
+                  className="object-cover rounded-3xl group-hover:scale-105 transition-transform duration-500"
                   priority
                 />
 
                 {/* Floating Micro-Badge */}
                 <div className="absolute top-4 left-4 z-10">
                   <div className="sticker-badge bg-[#FFE97D] text-[#3A2E2A] shadow-sticker-sm text-[11px]">
-                    ⭐ S&amp;S Signature Collection
+                    ⭐ Signature Collection
                   </div>
                 </div>
 
@@ -126,7 +127,7 @@ export default function HomePage() {
                     className="btn-sticker bg-[#FAF7F2] text-[#3A2E2A] px-3 py-1.5 rounded-xl text-xs font-black flex items-center gap-1.5 shadow-sticker-sm"
                   >
                     <QrCode className="w-4 h-4 text-[#C1694F]" />
-                    <span>Scan Storyteller</span>
+                    <span>Cerita Produk</span>
                   </Link>
                 </div>
               </div>
@@ -140,19 +141,19 @@ export default function HomePage() {
           2. PRODUCT GRID & CATEGORY FILTER
          ========================================================================= */}
       <section id="koleksi" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Title & Filter bar */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
           <div>
             <div className="inline-flex items-center gap-2 sticker-badge bg-[#F0D3D3] text-[#3A2E2A] mb-2">
               <Sparkles className="w-3.5 h-3.5 text-[#C1694F]" />
-              CURATED GEN-Z CATALOG
+              Katalog Produk
             </div>
             <h2 className="text-3xl sm:text-4xl font-black text-[#3A2E2A] tracking-tight">
               Koleksi STITCHWARE &amp; SPACE
             </h2>
             <p className="text-sm text-[#3A2E2A]/75 font-medium mt-1">
-              Pilihan tas, dompet matching set, bag charm boneka suede, dan keychain akrilik custom.
+              Pilihan tas, dompet, bag charm boneka, dan keychain akrilik custom.
             </p>
           </div>
 
@@ -162,11 +163,10 @@ export default function HomePage() {
               <button
                 key={cat.id}
                 onClick={() => setSelectedCategory(cat.id)}
-                className={`px-4 py-2 rounded-xl text-xs font-black transition-all ${
-                  selectedCategory === cat.id
-                    ? "bg-[#C1694F] text-[#FAF7F2] shadow-sticker-sm"
-                    : "text-[#3A2E2A] hover:bg-[#FAF7F2]"
-                }`}
+                className={`px-4 py-2 rounded-xl text-xs font-black transition-all ${selectedCategory === cat.id
+                  ? "bg-[#C1694F] text-[#FAF7F2] shadow-sticker-sm"
+                  : "text-[#3A2E2A] hover:bg-[#FAF7F2]"
+                  }`}
               >
                 {cat.name}
               </button>
@@ -188,7 +188,7 @@ export default function HomePage() {
          ========================================================================= */}
       <section id="filosofi" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-[#FFE97D] rounded-4xl p-8 sm:p-12 border-3 border-[#3A2E2A] shadow-sticker-lg">
-          
+
           <div className="text-center max-w-2xl mx-auto mb-10 space-y-2">
             <span className="text-xs font-black uppercase tracking-widest text-[#C1694F]">
               4 NILAI DASAR STITCHWARE &amp; SPACE
@@ -199,7 +199,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            
+
             {/* Pillar 1 */}
             <div className="bg-[#FAF7F2] p-6 rounded-3xl border-2 border-[#3A2E2A] shadow-sticker-sm space-y-3">
               <div className="w-12 h-12 rounded-2xl bg-[#C1694F] text-[#FAF7F2] flex items-center justify-center font-black text-xl border-2 border-[#3A2E2A]">
@@ -259,9 +259,9 @@ export default function HomePage() {
          ========================================================================= */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-[#FAF7F2] rounded-4xl border-3 border-[#3A2E2A] shadow-sticker-lg p-8 sm:p-14 overflow-hidden relative">
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-            
+
             {/* Left Story Content */}
             <div className="lg:col-span-7 space-y-6">
               <div className="inline-flex items-center gap-2 sticker-badge bg-[#FFE97D] text-[#3A2E2A]">
@@ -270,29 +270,29 @@ export default function HomePage() {
               </div>
 
               <h2 className="text-3xl sm:text-4xl font-black text-[#3A2E2A] tracking-tight leading-snug">
-                Pindai QR Code di Tasmu, Temui Penjahit di Baliknya
+                Pindai QR Code di Koleksimu, Temui Penjahit di Baliknya
               </h2>
 
               <p className="text-sm sm:text-base text-[#3A2E2A]/80 font-medium leading-relaxed">
-                Setiap tas STITCHWARE &amp; SPACE dilengkapi label tenun ber-QR Code unik. Ketika dipindai, kamu akan langsung terhubung ke halaman sertifikat orisinalitas yang menampilkan:
+                Setiap tas dan dompet STITCHWARE &amp; SPACE dilengkapi QR Code yang menghubungkanmu ke identitas koleksimu yang menampilkan:
               </p>
 
               <ul className="space-y-3 text-xs sm:text-sm text-[#3A2E2A] font-semibold">
                 <li className="flex items-center gap-2.5">
                   <CheckCircle className="w-4 h-4 text-[#C1694F] shrink-0" />
-                  <span>Foto &amp; profil artisan penjahit (eks-buruh garmen Cimahi / Bandung)</span>
+                  <span>Foto &amp; profil artisan penjahit</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <CheckCircle className="w-4 h-4 text-[#C1694F] shrink-0" />
-                  <span>Lokasi persis atelier perakitan produk (Melong Cimahi atau Dipatiukur Bandung)</span>
+                  <span>Lokasi para penjahit</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <CheckCircle className="w-4 h-4 text-[#C1694F] shrink-0" />
-                  <span>Batch nomor kain perca dan asal pabrik garmen donor</span>
+                  <span>Batch kain perca</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <CheckCircle className="w-4 h-4 text-[#C1694F] shrink-0" />
-                  <span>Jumlah kilogram limbah yang berhasil kamu selamatkan dari TPA</span>
+                  <span>Kontribusi limbah yang berhasil kamu selamatkan dari TPA</span>
                 </li>
               </ul>
 
@@ -311,7 +311,7 @@ export default function HomePage() {
             {/* Right Interactive Preview Card */}
             <div className="lg:col-span-5">
               <div className="bg-[#EFE3D0] p-6 rounded-3xl border-2 border-[#3A2E2A] shadow-sticker space-y-4">
-                
+
                 {/* Simulated Product Tag */}
                 <div className="bg-[#FAF7F2] p-4 rounded-2xl border-2 border-[#3A2E2A] flex items-center gap-4">
                   <div className="relative w-20 h-20 rounded-xl overflow-hidden border border-[#3A2E2A] bg-white p-1 shrink-0">

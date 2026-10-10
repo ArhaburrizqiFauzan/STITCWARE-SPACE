@@ -384,7 +384,7 @@ export const PRODUCTS: Product[] = [
 
 export const CATEGORIES = [
   { id: "all", name: "Semua Produk", badge: "Koleksi Lengkap" },
-  { id: "bags", name: "Tas (Bags)", badge: "Free Bag Charm" },
-  { id: "wallets", name: "Dompet (Wallets)", badge: "Matching Set" },
-  { id: "accessories", name: "Aksesoris & Custom", badge: "Personalized" },
+  { id: "bags", name: "Tas", badge: "Free Bag Charm" },
+  { id: "wallets", name: "Dompet", badge: "Matching Set" },
+  { id: "accessories", name: "Aksesoris", badge: "Personalized" },
 ];

@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Product } from "@/data/products";
 import { useCart } from "@/context/CartContext";
-import { ShoppingBag, Eye, QrCode, Sparkles } from "lucide-react";
+import { ShoppingCartPlus, Eye, QrCode, Sparkles } from "lucide-react";
 
 interface ProductCardProps {
   product: Product;
@@ -22,18 +22,18 @@ export default function ProductCard({ product }: ProductCardProps) {
 
   const formattedOriginalPrice = product.originalPrice
     ? new Intl.NumberFormat("id-ID", {
-        style: "currency",
-        currency: "IDR",
-        maximumFractionDigits: 0,
-      }).format(product.originalPrice)
+      style: "currency",
+      currency: "IDR",
+      maximumFractionDigits: 0,
+    }).format(product.originalPrice)
     : null;
 
   return (
     <div className="group relative bg-[#FAF7F2] rounded-3xl border-2 border-[#3A2E2A] p-4 flex flex-col justify-between shadow-sticker hover:-translate-y-1.5 transition-all duration-300">
-      
+
       {/* Top Media & Badges */}
       <div className="relative aspect-square w-full rounded-2xl bg-[#EFE3D0]/50 overflow-hidden border border-[#3A2E2A]/10 mb-4">
-        
+
         {/* Main Product Image */}
         <Link href={`/product/${product.id}`} className="block w-full h-full">
           <Image
@@ -50,11 +50,10 @@ export default function ProductCard({ product }: ProductCardProps) {
           {product.badges.slice(0, 2).map((badge, idx) => (
             <span
               key={idx}
-              className={`sticker-badge ${
-                idx === 0
-                  ? "bg-[#FFE97D] text-[#3A2E2A]"
-                  : "bg-[#F0D3D3] text-[#3A2E2A]"
-              }`}
+              className={`sticker-badge ${idx === 0
+                ? "bg-[#FFE97D] text-[#3A2E2A]"
+                : "bg-[#F0D3D3] text-[#3A2E2A]"
+                }`}
             >
               <Sparkles className="w-3 h-3 text-[#C1694F]" />
               {badge}
@@ -77,15 +76,15 @@ export default function ProductCard({ product }: ProductCardProps) {
 
       {/* Product Details */}
       <div className="flex-1 flex flex-col">
-        
+
         {/* Category & Colorways */}
         <div className="flex items-center justify-between gap-2 mb-1.5">
           <span className="text-[11px] font-black uppercase tracking-wider text-[#C1694F]">
             {product.category === "bags"
               ? "Tas (Include Charm)"
               : product.category === "wallets"
-              ? "Dompet Senada"
-              : "Aksesoris & Custom"}
+                ? "Dompet Senada"
+                : "Aksesoris"}
           </span>
           <div className="flex items-center gap-1.5">
             {product.colorways.map((cw, i) => (
@@ -145,8 +144,7 @@ export default function ProductCard({ product }: ProductCardProps) {
               className="btn-sticker bg-[#FFE97D] text-[#3A2E2A] px-3 py-2 rounded-xl text-xs font-black flex items-center gap-1.5"
               aria-label="Tambah ke Keranjang"
             >
-              <ShoppingBag className="w-3.5 h-3.5" />
-              <span>+Beli</span>
+              <ShoppingCartPlus className="w-3.5 h-3.5" />
             </button>
           </div>
         </div>

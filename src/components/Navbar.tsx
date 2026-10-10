@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useCart } from "@/context/CartContext";
-import { ShoppingBag, Menu, X, Sparkles, QrCode, ArrowRight } from "lucide-react";
+import { ShoppingCart, Menu, X, Sparkles, QrCode, ArrowRight } from "lucide-react";
 
 export default function Navbar() {
   const { totalItems, openCart } = useCart();
@@ -40,38 +40,38 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav Links */}
-          <nav className="hidden md:flex items-center gap-8 text-sm font-bold text-[#3A2E2A]">
+          <nav className="hidden md:flex items-center gap-12 text-sm font-bold text-[#3A2E2A]">
             <Link
               href="/#koleksi"
               className="hover:text-[#C1694F] transition-colors relative py-1"
             >
-              Koleksi Produk
+              Produk
             </Link>
             <Link
               href="/#filosofi"
               className="hover:text-[#C1694F] transition-colors relative py-1"
             >
-              Ekonomi Sirkuler
+              Identitas
             </Link>
             <Link
               href="/#impact"
               className="hover:text-[#C1694F] transition-colors relative py-1"
             >
-              Dampak Sosial
+              Dampak
             </Link>
             <Link
               href="/traceability/SNS-CMH-2026-042"
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#EFE3D0] hover:bg-[#FFE97D] text-[#3A2E2A] border border-[#3A2E2A] transition-all"
             >
               <QrCode className="w-3.5 h-3.5 text-[#C1694F]" />
-              <span>QR Storyteller</span>
+              <span>Cerita Produk</span>
             </Link>
             <Link
               href="/product/sns-keychain-acrylic"
               className="inline-flex items-center gap-1.5 text-[#C1694F] hover:text-[#AA573F] transition-colors"
             >
               <Sparkles className="w-4 h-4" />
-              <span>Customizer</span>
+              <span>Buat Keychain</span>
             </Link>
           </nav>
 
@@ -80,14 +80,15 @@ export default function Navbar() {
             {/* Cart Button */}
             <button
               onClick={openCart}
-              className="relative btn-sticker bg-[#FFE97D] text-[#3A2E2A] px-4 py-2 rounded-2xl flex items-center gap-2"
+              className="relative p-2 hover:opacity-70 transition-opacity"
               aria-label="Keranjang Belanja"
             >
-              <ShoppingBag className="w-4 h-4 text-[#3A2E2A]" />
-              <span className="hidden sm:inline text-xs font-black uppercase">Keranjang</span>
-              <span className="w-5 h-5 bg-[#C1694F] text-[#FAF7F2] rounded-full text-[11px] font-black flex items-center justify-center border border-[#3A2E2A]">
-                {totalItems}
-              </span>
+              <ShoppingCart className="w-6 h-6 text-[#3A2E2A]" />
+              {totalItems > 0 && (
+                <span className="absolute -top-0.5 -right-0.5 w-4 h-4 bg-[#C1694F] text-[#FAF7F2] rounded-full text-[10px] font-black flex items-center justify-center border border-[#FAF7F2]">
+                  {totalItems}
+                </span>
+              )}
             </button>
 
             {/* Mobile Menu Hamburger */}
@@ -139,7 +140,7 @@ export default function Navbar() {
                 onClick={() => setMobileMenuOpen(false)}
                 className="flex items-center justify-between py-2 text-[#3A2E2A] bg-[#FFE97D] px-4 rounded-xl border border-[#3A2E2A]"
               >
-                <span>Custom Acrylic Keychain</span>
+                <span>Buat Desain Keychain</span>
                 <Sparkles className="w-4 h-4 text-[#C1694F]" />
               </Link>
             </div>

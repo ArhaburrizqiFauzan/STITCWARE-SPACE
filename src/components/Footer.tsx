@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#3A2E2A] text-[#FAF7F2] border-t-4 border-[#C1694F] pt-16 pb-12 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Top Highlight Banner */}
         <div className="bg-[#FAF7F2] text-[#3A2E2A] rounded-3xl p-8 mb-16 border-2 border-[#3A2E2A] shadow-sticker flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-2 max-w-xl">
@@ -36,7 +36,7 @@ export default function Footer() {
 
         {/* 4 Columns Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-[#FAF7F2]/10">
-          
+
           {/* Brand Info (2 cols) */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
@@ -76,7 +76,7 @@ export default function Footer() {
               <li><Link href="/product/sns-bag-sling" className="hover:text-[#FFE97D] transition-colors">Komorebi Daily Sling</Link></li>
               <li><Link href="/product/sns-wallet-terra" className="hover:text-[#FFE97D] transition-colors">Harmoni Matching Wallet</Link></li>
               <li><Link href="/product/sns-charm-plush" className="hover:text-[#FFE97D] transition-colors">Stitchy Plush Bag Charm</Link></li>
-              <li><Link href="/product/sns-keychain-acrylic" className="hover:text-[#FFE97D] transition-colors">Custom Acrylic Keychain</Link></li>
+              <li><Link href="/product/sns-keychain-acrylic" className="hover:text-[#FFE97D] transition-colors">Buat Desain Keychain</Link></li>
             </ul>
           </div>
 

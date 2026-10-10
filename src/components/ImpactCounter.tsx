@@ -20,24 +20,24 @@ export default function ImpactCounter() {
       <div className="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-[#F0D3D3]/30 blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <div className="inline-flex items-center gap-2 sticker-badge bg-[#FFE97D] text-[#3A2E2A]">
             <Sparkles className="w-3.5 h-3.5 text-[#C1694F]" />
-            REAL TIME SOCIAL &amp; PLANETARY IMPACT
+            DAMPAK UNTUK SOSIAL MASYARAKAT &amp; KELESTARIAN BUMI
           </div>
           <h2 className="text-3xl sm:text-5xl font-black text-[#3A2E2A] tracking-tight leading-tight">
             Setiap Jahitan Menyerap Limbah, Menghidupkan Martabat
           </h2>
           <p className="text-base sm:text-lg text-[#3A2E2A]/75 font-medium leading-relaxed">
-            Data validasi Bab V Laporan Bisnis S&amp;S: Mengonversi ancaman krisis limbah tekstil Jawa Barat dan gelombang PHK industri garmen menjadi ekosistem ekonomi sirkuler yang nyata.
+            Mengonversi ancaman krisis limbah tekstil Jawa Barat dan gelombang PHK industri garmen menjadi ekosistem ekonomi sirkuler yang nyata.
           </p>
         </div>
 
         {/* 4 Key Metrics Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          
+
           {/* Card 1 */}
           <div className="bg-[#FAF7F2] p-6 rounded-3xl border-2 border-[#3A2E2A] shadow-sticker hover:-translate-y-1 transition-transform">
             <div className="w-12 h-12 rounded-2xl bg-[#FFE97D] border-2 border-[#3A2E2A] flex items-center justify-center mb-4">
@@ -46,7 +46,7 @@ export default function ImpactCounter() {
             <span className="text-xs font-bold uppercase tracking-wider text-[#C1694F]">Target Penuh Tahunan</span>
             <div className="text-4xl font-black text-[#3A2E2A] mt-1 mb-2">±6,7 Ton</div>
             <p className="text-xs text-[#3A2E2A]/75 leading-relaxed">
-              Limbah kain perca industri garmen terserap dan dialihkan dari pembuangan TPA atau pembakaran terbuka.
+              Limbah kain perca terserap dan dialihkan dari pembuangan TPA atau pembakaran terbuka.
             </p>
           </div>
 
@@ -55,10 +55,10 @@ export default function ImpactCounter() {
             <div className="w-12 h-12 rounded-2xl bg-[#F0D3D3] border-2 border-[#3A2E2A] flex items-center justify-center mb-4">
               <Users className="w-6 h-6 text-[#C1694F]" />
             </div>
-            <span className="text-xs font-bold uppercase tracking-wider text-[#C1694F]">Pemberdayaan Nyata</span>
+            <span className="text-xs font-bold uppercase tracking-wider text-[#C1694F]">Pemberdayaan</span>
             <div className="text-4xl font-black text-[#3A2E2A] mt-1 mb-2">15 Pengrajin</div>
             <p className="text-xs text-[#3A2E2A]/75 leading-relaxed">
-              Tenaga kerja terampil eks-buruh garmen Cimahi &amp; Bandung Raya direkrut dengan upah adil &amp; fasilitas BPJS.
+              Tenaga kerja terampil eks-buruh garmen diperkerjakan dengan upah adil &amp; mendapatkan fasilitas BPJS.
             </p>
           </div>
 
@@ -67,10 +67,10 @@ export default function ImpactCounter() {
             <div className="w-12 h-12 rounded-2xl bg-[#EFE3D0] border-2 border-[#3A2E2A] flex items-center justify-center mb-4">
               <Clock className="w-6 h-6 text-[#3A2E2A]" />
             </div>
-            <span className="text-xs font-bold uppercase tracking-wider text-[#C1694F]">Jam Kerja Bermartabat</span>
+            <span className="text-xs font-bold uppercase tracking-wider text-[#C1694F]">Jam Kerja Adil</span>
             <div className="text-4xl font-black text-[#3A2E2A] mt-1 mb-2">2.640 Jam</div>
             <p className="text-xs text-[#3A2E2A]/75 leading-relaxed">
-              Jam kerja layak tercipta per bulan (158.400 menit) dengan standar tarif produksi Rp 398/menit.
+              Jam kerja layak tercipta per bulan dengan standar tarif produksi.
             </p>
           </div>
 
@@ -80,9 +80,9 @@ export default function ImpactCounter() {
               <Leaf className="w-6 h-6 text-[#FAF7F2]" />
             </div>
             <span className="text-xs font-bold uppercase tracking-wider text-[#FFE97D]">Eco Material Trim</span>
-            <div className="text-4xl font-black text-[#3A2E2A] mt-1 mb-2">100% Non-PVC</div>
+            <div className="text-3xl font-black text-[#3A2E2A] mt-1 mb-2">100% Non-PVC</div>
             <p className="text-xs text-[#3A2E2A]/75 leading-relaxed">
-              Water-Based PU Leather bebas klorin &amp; emisi VOC sangat rendah untuk strap dan piping tas.
+              Water-Based PU Leather bebas klorin &amp; emisi VOC sangat rendah.
             </p>
           </div>
 
@@ -91,17 +91,17 @@ export default function ImpactCounter() {
         {/* Interactive Impact Calculator Box */}
         <div className="bg-[#EFE3D0] rounded-4xl p-8 sm:p-12 border-3 border-[#3A2E2A] shadow-sticker-lg">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            
+
             {/* Left Column: Interactive Slider */}
             <div className="lg:col-span-6 space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#FAF7F2] rounded-full text-xs font-black text-[#3A2E2A] border border-[#3A2E2A]">
-                🎮 INTERACTIVE CALCULATOR
+                KALKULATOR DAMPAK LINGKUNGAN
               </div>
               <h3 className="text-2xl sm:text-3xl font-black text-[#3A2E2A] tracking-tight">
                 Hitung Kontribusi Dampak Belanjamu
               </h3>
               <p className="text-sm text-[#3A2E2A]/80 font-medium">
-                Pilih jumlah tas STITCHWARE &amp; SPACE yang kamu koleksi bersama teman/keluarga, dan saksikan metrik keberlanjutan yang langsung tercipta:
+                Tentukan jumlah tas STITCHWARE &amp; SPACE yang kamu miliki, lihat dan rasakan dampak yang kamu ciptakan:
               </p>
 
               {/* Slider Input */}
@@ -112,7 +112,7 @@ export default function ImpactCounter() {
                     {bagCount} Pcs
                   </span>
                 </div>
-                
+
                 <input
                   type="range"
                   min="1"
@@ -132,7 +132,7 @@ export default function ImpactCounter() {
 
             {/* Right Column: Computed Metrics Cards */}
             <div className="lg:col-span-6 grid grid-cols-2 gap-4">
-              
+
               <div className="bg-[#FAF7F2] p-5 rounded-2xl border-2 border-[#3A2E2A] shadow-sticker-sm text-center">
                 <span className="text-xs font-bold text-[#C1694F] uppercase">Limbah Kain Perca</span>
                 <div className="text-3xl font-black text-[#3A2E2A] my-1">{fabricSaved} kg</div>
@@ -142,17 +142,17 @@ export default function ImpactCounter() {
               <div className="bg-[#FAF7F2] p-5 rounded-2xl border-2 border-[#3A2E2A] shadow-sticker-sm text-center">
                 <span className="text-xs font-bold text-[#C1694F] uppercase">Upah Layak Terbayar</span>
                 <div className="text-3xl font-black text-[#3A2E2A] my-1">{artisanHours} Jam</div>
-                <span className="text-[11px] text-[#3A2E2A]/70">Waktu kerja bermartabat</span>
+                <span className="text-[11px] text-[#3A2E2A]/70">Jam kerja yang adil</span>
               </div>
 
               <div className="bg-[#FAF7F2] p-5 rounded-2xl border-2 border-[#3A2E2A] shadow-sticker-sm text-center">
                 <span className="text-xs font-bold text-[#C1694F] uppercase">Air Bersih Dihemat</span>
                 <div className="text-3xl font-black text-[#3A2E2A] my-1">{waterSavedLiters} L</div>
-                <span className="text-[11px] text-[#3A2E2A]/70">Virtual water tekstil</span>
+                <span className="italic text-[11px] text-[#3A2E2A]/70">Virtual water textile</span>
               </div>
 
               <div className="bg-[#FAF7F2] p-5 rounded-2xl border-2 border-[#3A2E2A] shadow-sticker-sm text-center">
-                <span className="text-xs font-bold text-[#C1694F] uppercase">Offset Karbon</span>
+                <span className="text-xs font-bold text-[#C1694F] uppercase">Emisi Karbon</span>
                 <div className="text-3xl font-black text-[#3A2E2A] my-1">{co2Offset} kg</div>
                 <span className="text-[11px] text-[#3A2E2A]/70">Emisi karbon dicegah</span>
               </div>
