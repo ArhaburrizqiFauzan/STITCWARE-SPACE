@@ -100,7 +100,7 @@ export default function TraceabilityClient({ code }: { code: string }) {
               />
             </div>
             <div>
-              <span className="text-[10px] font-black uppercase text-[#C1694F] block">PASSPORT PRODUK RESMI</span>
+              <span className="text-[10px] font-black uppercase text-[#C1694F] block">BUKTI PRODUK RESMI</span>
               <span className="text-sm font-mono font-black text-[#3A2E2A] block mt-0.5">{record.code}</span>
               <span className="text-[11px] text-[#3A2E2A]/70 block mt-1">Batch: {record.batchNumber}</span>
             </div>
