@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# STITCHWARE & SPACE
 
-## Getting Started
+Website demo untuk business plan STITCHWARE & SPACE, brand aksesori fashion sirkuler yang mengolah limbah kain menjadi tas, dompet, dan aksesori. Situs ini memperkenalkan koleksi produk, dampak brand, dan cerita di balik produk serta para pengrajinnya.
 
-First, run the development server:
+> **Status:** Proyek ini merupakan demo/prototipe. Pendaftaran newsletter atau member, pembayaran, dan pemrosesan pesanan belum terhubung ke backend atau layanan eksternal.
+
+## Fitur
+
+- Halaman utama dengan pengenalan brand, katalog, dan filter kategori.
+- Halaman detail produk dengan opsi kustomisasi untuk produk tertentu.
+- Keranjang belanja demo yang disimpan di `localStorage` browser.
+- Halaman traceability untuk melihat cerita produk dan pengrajin.
+- Tampilan responsif untuk desktop dan perangkat mobile.
+
+## Teknologi
+
+- Next.js 16 dengan App Router
+- React 19 dan TypeScript
+- Tailwind CSS 4
+- Framer Motion dan Lucide React
+
+## Menjalankan secara lokal
+
+Pastikan Node.js dan npm sudah terpasang. Dari direktori proyek, jalankan:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Buka [http://localhost:3000](http://localhost:3000) di browser. Perubahan kode akan ditampilkan saat development server berjalan.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Perintah yang tersedia
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run dev    # Menjalankan development server
+npm run lint   # Menjalankan ESLint
+npm run build  # Membuat production build
+npm run start  # Menjalankan production build
+```
 
-## Learn More
+Untuk mencoba production build secara lokal:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Struktur proyek
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```text
+src/
+  app/             Halaman dan route aplikasi
+    product/[id]/  Detail produk
+    traceability/  Cerita dan informasi traceability
+  components/      Komponen antarmuka, termasuk Footer dan kartu produk
+  context/         State keranjang belanja
+  data/            Data demo produk dan pengrajin
+public/
+  images/          Gambar dan aset visual
+```
 
-## Deploy on Vercel
+Route contoh:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `/` — halaman utama
+- `/product/sns-bag-shoulder` — contoh detail produk
+- `/traceability/SNS-CMH-2026-042` — contoh halaman traceability
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deploy demo ke Vercel
+
+1. Push repository ini ke GitHub.
+2. Masuk ke [Vercel](https://vercel.com/) dan impor repository GitHub.
+3. Pilih repository proyek ini. Vercel akan mendeteksi Next.js secara otomatis.
+4. Gunakan pengaturan build default, lalu pilih **Deploy**.
+5. Setelah selesai, Vercel memberikan URL publik untuk dibagikan.
+
+Setiap push ke branch yang terhubung dapat memicu deployment baru. Pastikan tidak memasukkan rahasia atau kredensial ke repository. Untuk detail terbaru, lihat [dokumentasi deployment Next.js](https://nextjs.org/docs/app/building-your-application/deploying).
